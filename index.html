@@ -95,6 +95,7 @@
 
 
   <hr>
+  <div id="Abstract_InText">
   <h3 id="Abstract"><b>Abstract</b></h3>  
   <p class="ex1">
 <pre>
@@ -105,6 +106,7 @@ We further consider an application to texture classification problems in sonar m
 active learning and traditional machine learning approaches. Our results show that...We conclude that..
 </pre>
   </p>
+</div>
 
 
     
@@ -113,6 +115,7 @@ active learning and traditional machine learning approaches. Our results show th
 
     
   <hr>
+  <div id="Introduction_InText">
   <h3 id="Introduction"><b>Introduction</b></h3>
   <p class="ex1">
   <pre>
@@ -131,6 +134,7 @@ learning at each epoch. The process is continued until some stopping criterion h
 reaching a stage where information from the selected instances is contrary to the model, causing the
 classifier confidence to drop, as in Vlachos (2008).
   </pre>
+  </div>
 
 
 
@@ -139,6 +143,7 @@ classifier confidence to drop, as in Vlachos (2008).
 
     
     <hr>
+    <div id="Analysis_InText">
     <h3 id="Analysis_and_discussion"><b>Analysis and discussion</b></h3>
     <p class="ex1">
     <pre>
@@ -167,7 +172,7 @@ classifier confidence to drop, as in Vlachos (2008).
         <td>9</td>
       </tr>
     </table>
-    
+    </div>
 
 
     <!--Refrences section-->
@@ -175,6 +180,7 @@ classifier confidence to drop, as in Vlachos (2008).
 
     
     <hr>
+    <div id="References_InText"> 
     <h3 id="Refrences"><b>References</b></h3>
     <p class="ex1">
     <pre>
@@ -193,6 +199,7 @@ Campbell, C, Cristianini, N and Smola, A (2000), Query learning with large margi
 In: Proc. 17th Internat. Conf.on Machine Learning. Morgan Kaufman, Stanford, CA,111-118
     </pre>
     </p>
+    </div>
  
     <hr>
 
@@ -254,10 +261,12 @@ In: Proc. 17th Internat. Conf.on Machine Learning. Morgan Kaufman, Stanford, CA,
 <hr>
 <script>
   // Function to calculate and display word count for a specified section
-  function displayWordCount(sectionId, outputId) {
+  function displayWordCount(sectionId) {
     // Get the text content from the specified section
-    const text = document.getElementById(sectionId).textContent;
-    // Split text into words based on spaces and filter out any empty strings
+    const element = document.getElementById(sectionId);
+if (!element) return 0; // Skip if not found
+const text = element.textContent || "";
+	// Split text into words based on spaces and filter out any empty strings
     const wordArray = text.trim().split(/\s+/);
     // Count the words
     const wordCount = wordArray.length;
@@ -269,8 +278,10 @@ In: Proc. 17th Internat. Conf.on Machine Learning. Morgan Kaufman, Stanford, CA,
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
     const AnalysisCount = displayWordCount("Analysis_InText");
+    const ReferencesCount = displayWordCount("References_InText");
+    const AbstractCount = displayWordCount("Abstract_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount + AnalysisCount + ReferencesCount + AbstractCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
@@ -280,7 +291,4 @@ In: Proc. 17th Internat. Conf.on Machine Learning. Morgan Kaufman, Stanford, CA,
     
     
     
-    
-  
- 
-</html>
+  </html>
