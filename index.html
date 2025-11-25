@@ -270,10 +270,9 @@ const text = element.textContent || "";
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
     const AnalysisCount = displayWordCount("Analysis_InText");
-    const ReferencesCount = displayWordCount("References_InText");
     const AbstractCount = displayWordCount("Abstract_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount + ReferencesCount + AbstractCount;
+    const totalWordCount = IntroductionCount + AnalysisCount + AbstractCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
