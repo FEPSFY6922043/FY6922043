@@ -19,7 +19,7 @@
    <h1><b>ENG0018 Computer Laboratory 2025/26</b></h1>
    <h2>Student URN: 6922043</h2>
   <hr>
-  <h2 style="font-family:calibri:"><b>Conference Paper: Commanding the Skies with Morphing Wings and MFCs</b></h2>
+  <h2 style="font-family:calibri:"><b>Conference Paper: Commanding the Skies with Morphing Wings</b></h2>
   <hr>
      
      
@@ -74,12 +74,12 @@
     <li><a href="#Introduction" style="color:black; text-decoration:none;">Introduction</a></li>
     <li>
       <a href="#" style="color:black; text-decoration:none;" onclick="toggleSub(); return false;">
-        Analysis and Discussion <span id="triangle" style="display:inline-block; transition: transform 0.2s;">▶</span>
+        Morphing Wings <span id="triangle" style="display:inline-block; transition: transform 0.2s;">▶</span>
       </a>
       <ul id="subs" style="display:none; list-style: circle; padding-left:20px;">
         <li><a href="#SMA" style="color:black; text-decoration:none;">Shape Memory Alloys (SMAs)</a></li>
         <li><a href="#MFC" style="color:black; text-decoration:none;">Macro Fiber Composites (MFCs)</a></li>
-        <li><a href="#Comparison" style="color:black; text-decoration:none;">SMAS VS MFCs</a></li>
+        <li><a href="#Comparison" style="color:black; text-decoration:none;">SMAs vs MFCs</a></li>
       </ul>
     </li>
     <li><a href="#Conclusion" style="color:black; text-decoration:none;">Conclusion</a></li>
@@ -149,7 +149,7 @@ Together, Morphing Wings and Piezoelectric Sensors prophesy a transformative fut
 
 <hr>
 <div id="Analysis_InText">
-<h3 id="Analysis_and_discussion"><b>Analysis and Discussion</b></h3>
+<h3 id="Analysis_and_discussion"><b>Morphing Wings</b></h3>
 
 Morphing wings are designed to change shape during flight to maximise aerodynamic performance. Several technologies make this possible, including Shape Memory Alloys (SMAs) and Macro Fiber Composite (MFC) patches.
 
@@ -157,11 +157,23 @@ Morphing wings are designed to change shape during flight to maximise aerodynami
  “Shape memory alloy (SMA) is a functional metal with unique properties that allow it to be trained to move on its own. 
  SMAs can go through solid-state phase transformations, meaning they can be stretched, bent, heated, and cooled and still remember its original shape.” <i><a href="#ref1">(NASA, 2025)</a></i>So, it literally “memorises” its shape and will return to it with just a bit of temperature stimulus. 
 This remarkable property is used in Morphing Wings aiding structural deformation. When it is heated using an electrical current or internal heating elements, SMAs can incite changes in wing shape, such as bending or twisting, without the need for complex mechanical parts. 
-<p>
-Advantages of SMAs include its High Energy Density and its Lightness, its HED means it can induce large deformations with minimal energy input. With SMAs being light will reduce the aircrafts overall weight, translating to improved fuel efficiency and performance.'<i><a href="#ref4">(Cooper et al., 2021)</a></i> 
-However, SMAs disadvantages include Temperature Control, Response Time and Durability. SMAs require precise temperature regulation, which can be difficult to maintain in fluctuating environmental conditions. In addition, the response time of SMAs may be slower compared to other actuation methods which limits their application in rapid aerodynamic changes. 
-Furthermore, SMAs can degrade overtime due to repeated cycling through the phase transitions which affects their long-term performance. 
-</p>
+<ul>
+  <li><b>Advantages:</b>
+    <ul>
+      <li>Can create large wing deformations.</li>
+      <li>Lightweight, improving fuel efficiency.</li>
+      <li>High energy density, works with minimal energy input. <i><a href="#ref4">[4]</a></i>
+</li>
+    </ul>
+  </li>
+  <li><b>Disadvantages:</b>
+    <ul>
+      <li>Slow response, depends on temperature</li>
+      <li>Needs precise temperature control</li>
+      <li>Material may fatigue after repeated use</li>
+    </ul>
+  </li>
+</ul>
 
 <p>
 A great example of the use of SMAs in the Aerospace Industry is NASA’s revolutionary tire tech made for the Mars rover to traverse the Red Planet’s rugged surface.
@@ -180,16 +192,25 @@ Then these fibers deform in response to voltage inputs, creating bending or twis
 Enabling the wing to adapt to the varying aerodynamic demands of the wing in the changing environmental conditions. 
 By bonding the MFCs to the skin of the wing, it can locally manipulate the wing’s shape. This ensures the overall performance and integrity of the wing is not compromised. Some of the pros of MFC patches include Precise Deformation, Lightweight, High – Frequency Response and Scalability. 
 MFCs provide fine control over small deformations, this makes them ideal for applications such as aerodynamic control and drag reduction.'
+<ul>
+  <li><b>Advantages:</b>
+<ul>
+<li>Made from lightweight materials (PZT, epoxy matrix, Kapton films) -> reduces aircraft weight and improves fuel efficiency. <i><a href="#ref3">[3]</a></i></li>
+<li>Low manufacturing costs -> increases commercial viability. <i><a href="#ref3">[3]</a></i></li>
+<li>High-frequency response -> responds quickly to changing aerodynamic conditions in real time. <i><a href="#ref3">[3]</a></i></li>
+</ul>
+</li>
+<li><b>Disadvantages:</b>
+<ul>
+<li>Provides only small deformations -> limits large-scale wing morphing. <i><a href="#ref5">[5]</a></i></li>
+<li>Higher cost of manufacturing than conventional aircraft hardware. <i><a href="#ref5">[5]</a></i></li>
+<li>High temperature challenges -> affects adhesive bond performance. <i><a href="#ref5">[5]</a></i></li>
+<li>Success depends on adhesive bond integrity -> sensitive to temperature and thickness. <i><a href="#ref5">[5]</a></i></li>
+</ul>
+</li>
+</ul>
 
-<p>
-Furthermore, MFCs are made from lightweight materials such as PZT, epoxy matrix and two Kapton films. This means the overall weight of the aircraft is reduced which boosts fuel efficiency and performance. 
-The low manufacturing costs of the fibers also increaseses the commercial viability of MFCs making it more appealing to the Aerospace industry.'<i><a href="#ref3">(Thomas, Blázquez Calzada and Gilmour, 2019)</a></i>. 
-Contrasting to SMAs, MFCs patches have a High–Frequency Response which enables them to respond quickly allowing for rapid adaptation to changing aerodynamic conditions in real time. However, MFCs usually provides small changes compared with other actuators, this limits their ability to make large scale changes for Morphing Wings. 
-</p>
-
-In addition, MFCs have a higher cost of manufacturing compared with other conventional aircraft hardware, reducing profit for customers. 'Another challenge of MFCs is the high temperature, these patches can be challenging to apply and carbon composites can also affect the performance of the adhesive bond. 
-In addition, the success of the bonded MFC patches is heavily dependent on the integrity of the adhesive bond, which can be affected by factors such as temperature and adhesive thickness'<i><a href="#ref5">(Aabid et al., 2023)</a></i>
-
+<hr>
 
 <!--SMAs vs MFCs-->
 
