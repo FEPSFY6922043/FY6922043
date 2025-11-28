@@ -287,6 +287,7 @@ MFCs provide fine control over small deformations, this makes them ideal for app
 
 <!--Conclusion-->
 <hr>
+<div id="Conclusion_InText"></div>
 <h5 id="Conclusion"><b>Conclusion</b></h5>
 
 To conclude Shape Memory Alloys and Macro Fiber Composite patches together represent two of the most promising advances driving the revolution of the Morphing Wing systems. 
@@ -297,7 +298,7 @@ When these two innovations are integrated into a morphing wing structure, these 
 The combined advantages of drag reduction and improved lift drag ratios and the removal of the traditional hinged control surfaces offer a lighter, quieter and stealthier aircraft. 
 As research continues to refine these futuristic advancements SMA and MFC based Morphing Wings will redefine the standards for aircrafts – ushering in a new era of adaptive, high performance Aerospace Engineering
 </p>
-
+</div>
 
 
 <img src="MorphingWing.gif" alt="Banner" width="200" height="150">		
@@ -410,9 +411,9 @@ const text = element.textContent || "";
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
     const AnalysisCount = displayWordCount("Analysis_InText");
-    const AbstractCount = displayWordCount("Abstract_InText");
+    const ConclusionCount = displayWordCount("Conclusion_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount + AnalysisCount + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
