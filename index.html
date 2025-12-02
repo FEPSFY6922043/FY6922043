@@ -1,115 +1,115 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
 
-  
+
 <!--banner-->
 
 
-  
-  <head>
-  <img src="Banner.png" alt="Banner" width="1200" height="300">
-  </head>
 
-  
-  <!--Titles and URN-->
-
-
-  
-   <h1><b>ENG0018 Computer Laboratory 2025/26</b></h1> 
-   <h2>Student URN: 6922043</h2>
-  <hr>
-  <h2 style="font-family:calibri:"><b>Conference Paper: Commanding the Skies with Morphing Wings</b></h2>
-  <hr>
-     
-     
-  
-  
-  <!--style for tables-->
-
-  
-  <style>
-    table {
-      font-family: arial, sans-serif;
-      border-collapse: collapse;
-      width: 30%;
-
-    }
-
-    td, th {
-      border: 1px solid #dddddd;
-      text-align: left; 
-      padding: 8px;
-    }
-
-    tr:nth-child(even) {
-      background-color: #dddddd
-    }
-      
-  
-  
-  
-  </style>
-
-  <style>
-    p.ex1 {
-      margin-left: 250px;
-    }
-  </style>
+<head>
+<img src="Banner.png" alt="Banner" width="600" height="200">
 </head>
- 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet"href="https://www.w3schools.com/w3css/4/w3.css">
-    <style>
-      .mySlides {display:none;} 
-    </style>
-  <body style="background-color:#FFFFFF;margin-left:50px;">
+
+
+<!--Titles and URN-->
+
+
+
+<h1><b>ENG0018 Computer Laboratory 2025/26</b></h1> 
+<h2>Student URN: 6922043</h2>
+<hr>
+<h2 style="font-family:calibri:"><b>Conference Paper: Commanding the Skies with Morphing Wings</b></h2>
+<hr>
+
+
+
+
+<!--style for tables-->
+
+
+<style>
+table {
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 30%;
+
+}
+
+td, th {
+border: 1px solid #dddddd;
+text-align: left; 
+padding: 8px;
+}
+
+tr:nth-child(even) {
+background-color: #dddddd
+}
+
+
+
+
+</style>
+
+<style>
+p.ex1 {
+margin-left: 250px;
+}
+</style>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;} 
+</style>
+<body style="background-color:#FFFFFF;margin-left:50px;">
 
 
 <!-- Table of Contents -->
 <div id="toc" style="width:300px; border:1px solid #ccc; padding:12px; border-radius:8px; background:#f9f9f9; margin-left:20px;">
-  <h3><b>Table of contents</b></h3>
-  <ul style="list-style: disc; padding-left:20px;">
-    <li><a href="#Abstract" style="color:black; text-decoration:none;">Abstract</a></li>
-    <li><a href="#Introduction" style="color:black; text-decoration:none;">Introduction</a></li>
-    <li>
-      <a href="#" style="color:black; text-decoration:none;" onclick="toggleSub(); return false;">
-        Morphing Wings <span id="triangle" style="display:inline-block; transition: transform 0.2s;">▶</span>
-      </a>
-      <ul id="subs" style="display:none; list-style: circle; padding-left:20px;">
-        <li><a href="#SMA" style="color:black; text-decoration:none;">Shape Memory Alloys (SMAs)</a></li>
-        <li><a href="#MFC" style="color:black; text-decoration:none;">Macro Fiber Composites (MFCs)</a></li>
-        <li><a href="#Comparison" style="color:black; text-decoration:none;">SMAs vs MFCs</a></li>
-      </ul>
-    </li>
-    <li><a href="#Conclusion" style="color:black; text-decoration:none;">Conclusion</a></li>
-    <li><a href="#References" style="color:black; text-decoration:none;">References</a></li>
-  </ul>
+<h3><b>Table of contents</b></h3>
+<ul style="list-style: disc; padding-left:20px;">
+<li><a href="#Abstract" style="color:black; text-decoration:none;">Abstract</a></li>
+<li><a href="#Introduction" style="color:black; text-decoration:none;">Introduction</a></li>
+<li>
+<a href="#" style="color:black; text-decoration:none;" onclick="toggleSub(); return false;">
+Morphing Wings <span id="triangle" style="display:inline-block; transition: transform 0.2s;">▶</span>
+</a>
+<ul id="subs" style="display:none; list-style: circle; padding-left:20px;">
+<li><a href="#SMA" style="color:black; text-decoration:none;">Shape Memory Alloys (SMAs)</a></li>
+<li><a href="#MFC" style="color:black; text-decoration:none;">Macro Fiber Composites (MFCs)</a></li>
+<li><a href="#Comparison" style="color:black; text-decoration:none;">SMAs vs MFCs</a></li>
+</ul>
+</li>
+<li><a href="#Conclusion" style="color:black; text-decoration:none;">Conclusion</a></li>
+<li><a href="#References" style="color:black; text-decoration:none;">References</a></li>
+</ul>
 </div>
 
 <script>
 function toggleSub() {
-  var subs = document.getElementById("subs");
-  var tri = document.getElementById("triangle");
+var subs = document.getElementById("subs");
+var tri = document.getElementById("triangle");
 
-  if (subs.style.display === "none") {
-    subs.style.display = "block";   // Show subheadings
-    tri.style.transform = "rotate(90deg)"; // Rotate triangle
-  } else {
-    subs.style.display = "none";    // Hide subheadings
-    tri.style.transform = "rotate(0deg)";  // Reset triangle
-  }
+if (subs.style.display === "none") {
+subs.style.display = "block";   // Show subheadings
+tri.style.transform = "rotate(90deg)"; // Rotate triangle
+} else {
+subs.style.display = "none";    // Hide subheadings
+tri.style.transform = "rotate(0deg)";  // Reset triangle
+}
 }
 </script>
 
-    
-    <!--Abstract section-->
+
+<!--Abstract section-->
 
 
-  <hr>
-  <div id="Abstract_InText">
-  <h3 id="Abstract"><b>Abstract</b></h3>  
-  <p class="ex1">
+<hr>
+<div id="Abstract_InText">
+<h3 id="Abstract"><b>Abstract</b></h3>  
+<p class="ex1">
 <p>
 In Aerospace Engineering, ‘smart wings’ are wings making use of latest innovations in the industry such as advanced materials and integrated systems to maximise performance. 
 Such innovations include Morphing Wings and Piezoelectrics. Morphing wings are bioinspired wings based on bird flights, these wings can dynamically change shape to optimise performance during flight. 
@@ -117,30 +117,30 @@ Piezoelectric Sensors are tiny gadgets able to convert the mechanical stress of 
 Individually, these innovations are impressive, but combined they maximise aerodynamic efficiency, enhance manoeuverbility and deliver significant fuel savings. 
 Together, Morphing Wings and Piezoelectric Sensors prophesy a transformative future for aerospace innovations where adaptive, smart and intelligent flight systems are the standard
 </p>
-  </p>
+</p>
 </div>
 
 
-    
-  <!--Introduction section-->
+
+<!--Introduction section-->
 
 
-    
-  <hr>
-  <div id="Introduction_InText">
-  <h3 id="Introduction"><b>Introduction</b></h3>
-  <p class="ex1">
-  <p>
-	The development of smart wings is an immense leap in innovation in Aerospace achieved using adaptive aerodynamics, advanced materials and embedded intelligence to achieve unseen efficiency and control. 
-	Traditional wings are self-limiting.They are optimised for small range of conditions unable to adapt to the changing aerodynamic demands. 
-	Smart wings overcome these limitations with the integration of two technologies including Morphing structure and Piezoelectric sensing. 
-	Morphing wings much like bird’s flight can flexibly camber or twist optimise lift, drag, and maneuverability across regimes of flight. 
-	These wings will change shape to meet the aerodynamic demands of any condition from take-off to cruising. 
-	Piezoelectric sensors are the receptors and effectors of the wing translating mechanical strain into electrical signals just like the Pacinian Corpuscles in humans.
-    These innovations target major Aerospace obstacles including fuel efficiency, aerodynamic control and performance. 
-	Envision a wing which adapts like a bird, feels stress like a nerve, and controls air without flaps
- </p>
-  </div>
+
+<hr>
+<div id="Introduction_InText">
+<h3 id="Introduction"><b>Introduction</b></h3>
+<p class="ex1">
+<p>
+The development of smart wings is an immense leap in innovation in Aerospace achieved using adaptive aerodynamics, advanced materials and embedded intelligence to achieve unseen efficiency and control. 
+Traditional wings are self-limiting.They are optimised for small range of conditions unable to adapt to the changing aerodynamic demands. 
+Smart wings overcome these limitations with the integration of two technologies including Morphing structure and Piezoelectric sensing. 
+Morphing wings much like bird’s flight can flexibly camber or twist optimise lift, drag, and maneuverability across regimes of flight. 
+These wings will change shape to meet the aerodynamic demands of any condition from take-off to cruising. 
+Piezoelectric sensors are the receptors and effectors of the wing translating mechanical strain into electrical signals just like the Pacinian Corpuscles in humans.
+These innovations target major Aerospace obstacles including fuel efficiency, aerodynamic control and performance. 
+Envision a wing which adapts like a bird, feels stress like a nerve, and controls air without flaps
+</p>
+</div>
 
 
 <!--Analaysis and Discussion section-->
@@ -153,45 +153,59 @@ Together, Morphing Wings and Piezoelectric Sensors prophesy a transformative fut
 
 Morphing wings are designed to change shape during flight to maximise aerodynamic performance. Several technologies make this possible, including Shape Memory Alloys (SMAs) and Macro Fiber Composite (MFC) patches.
 
+<h4 id="SMA"><b>Shape Memory Alloys (SMAs)</b></h4>
 <h5 id="SMA"><b>Shape Memory Alloys (SMAs)</b></h5>
 
 
 <div style="display:flex; align-items:flex-start; gap:10px;">
 
-  <div style="flex:2;">
-    “Shape memory alloy (SMA) is a functional metal with unique properties that allow it to be trained to move on its own.
+<div style="flex:2;">
+“Shape memory alloy (SMA) is a functional metal with unique properties that allow it to be trained to move on its own.
 SMAs can go through solid-state phase transformations, meaning they can be stretched, bent, heated, and cooled and still remember its original shape.” <i><a href="#ref1">(NASA, 2025)</a></i>So, it literally “memorises” its shape and will return to it with just a bit of temperature stimulus.
 This remarkable property is used in Morphing Wings aiding structural deformation. When it is heated using an electrical current or internal heating elements, SMAs can incite changes in wing shape, such as bending or twisting, without the need for complex mechanical parts.
 An excellent real life implementation of SMAs is NASA's Spanwise Adaptive Wing (SAW) project <i><a href="#ref6">(NASA Armstrong Flight Research Center, 2018)</a></i></li> , where the outer wing parts of their PTERA (Prototype-Technology Evaluation Research Aircraft) folds, show in Figure 1
-  </div>
-
-  <!-- Figure 1 + caption -->
-  <div style="flex:1; max-width:350px; text-align:center;">
-    <img src="NASA SAW.gif" style="width:100%; border:1px solid #aaa;">
-    <p style="font-size:12px; margin-top:5px;"><a href="#ref6">Figure 1: NASA's PTERA folding its wings [6]</a></p>
-  </div>
 </div>
 
-	
+<!-- Figure 1 + caption -->
+<div style="flex:1; max-width:350px; text-align:center;">
+<img src="NASA SAW.gif" style="width:100%; border:1px solid #aaa;">
+<p style="font-size:12px; margin-top:5px;"><a href="#ref6">Figure 1: NASA's PTERA folding its wings [6]</a></p>
+</div>
+</div>
 
-	
+
+
+
 <ul>
-  <li><b>Advantages:</b>
-    <ul>
-      <li>Can create large wing deformations.</li>
-      <li>Lightweight, improving fuel efficiency.</li>
-      <li>High energy density, works with minimal energy input. <i><a href="#ref4">[4]</a></i>
+<li><b>Advantages:</b>
+<ul>
+<li>Can create large wing deformations.</li>
+<li>Lightweight, improving fuel efficiency.</li>
+<li>High energy density, works with minimal energy input. <i><a href="#ref4">[4]</a></i>
 </li>
-    </ul>
-  </li>
-  <li><b>Disadvantages:</b>
-    <ul>
-      <li>Slow response, depends on temperature</li>
-      <li>Needs precise temperature control</li>
-      <li>Material may fatigue after repeated use</li>
-    </ul>
-  </li>
 </ul>
+</li>
+<li><b>Disadvantages:</b>
+<ul>
+<li>Slow response, depends on temperature</li>
+<li>Needs precise temperature control</li>
+<li>Material may fatigue after repeated use</li>
+</ul>
+</li>
+</ul>
+
+<div style="display:flex; gap:15px; align-items:flex-start; margin-bottom:0;">
+<p style="flex:1; margin:0;">
+A great example of the use of SMAs in the Aerospace Industry is NASA’s revolutionary tire tech (Figure 2) made for the Mars rover to traverse the Red Planet’s rugged surface.
+NASA’s SMA consisted of nickel and titanium, “these metals can accommodate deformation despite extreme stress, permitting the tires to return to their original shape even with rigorous impact, which is not possible for spring tires made with conventional metal”
+<i><a href="#ref2">(Lilly, 2025)</a></i>.
+</p>
+
+<div style="flex:1; max-width:250px; text-align:center;">
+<img src="Mars Tire.jpg" style="width:100%; border:1px solid #aaa;">
+<p style="font-size:12px; margin-top:5px;"><a href="#ref1">Figure 2: NASA SMA Tire [1]</a></p>
+</div>
+</div>
 
 
 <p style="margin-top: 5px;">
@@ -201,22 +215,22 @@ The advantages of High Energy Density and simplicity of SMAs make it highly attr
 
 <h5 id="MFC"><b>Macro Fiber Composites(MFCs)</b></h5>
 <div style="display:flex; gap:15px; align-items:flex-start; margin-bottom:0;">
-  <p style="flex:1; margin:0;">
+<p style="flex:1; margin:0;">
 Morphing Wings can also be achieved using MFC (Macro Fiber Composite) patches, they are Piezoelectric actuators that consist of long, thin fibers embedded within a composite matrix.
 Then these fibers deform in response to voltage inputs, creating bending or twisting motions on the wing surface.
 
 Enabling the wing to adapt to the varying aerodynamic demands of the wing in the changing environmental conditions.
 By bonding the MFCs to the skin of the wing, it can locally manipulate the wing’s shape. This ensures the overall performance and integrity of the wing is not compromised. Some of the pros of MFC patches include Precise Deformation, Lightweight, High – Frequency Response and Scalability.
 MFCs provide fine control over small deformations, this makes them ideal for applications such as aerodynamic control and drag reduction.'
-  </p>
+</p>
 
-  <div style="flex:1; max-width:250px; text-align:center;">
-    <img src="MFC wing.png" style="width:100%; border:1px solid #aaa;">
-    <p style="font-size:12px; margin-top:5px;"><a href="#ref7">Figure 3: Morphing Wing using MFC actuators [7]</a></p>
-  </div>
+<div style="flex:1; max-width:250px; text-align:center;">
+<img src="MFC wing.png" style="width:100%; border:1px solid #aaa;">
+<p style="font-size:12px; margin-top:5px;"><a href="#ref7">Figure 3: Morphing Wing using MFC actuators [7]</a></p>
+</div>
 </div>
 <ul>
-  <li><b>Advantages:</b>
+<li><b>Advantages:</b>
 <ul>
 <li>Made from lightweight materials (PZT, epoxy matrix, Kapton films) -> reduces aircraft weight and improves fuel efficiency. <i><a href="#ref3">[3]</a></i></li>
 <li>Low manufacturing costs -> increases commercial viability. <i><a href="#ref3">[3]</a></i></li>
@@ -240,34 +254,34 @@ MFCs provide fine control over small deformations, this makes them ideal for app
 
 <h6 id="Comparison"><b>SMAs vs MFCs</b></h6>
 <div style="display: flex; gap: 20px; margin-top: 20px;">
-    <!-- First table (Comparison of SMAs and MFCs) -->
-    <table class="ex1" style="width:48%;">
-        <tr style="background:#e6f0ff;">
-            <th>Feature</th>
-            <th>Shape Memory Alloys (SMAs)</th>
-            <th>Macro Fiber Composites (MFCs)</th>
-        </tr>
-        <tr>
-            <td>Deformation scale</td>
-            <td>Large wing-shape changes</td>
-            <td>Small, precise surface control</td>
-        </tr>
-        <tr>
-            <td>Response speed</td>
-            <td>Slow (temperature-based)</td>
-            <td>Fast, high-frequency</td>
-        </tr>
-        <tr>
-            <td>Durability</td>
-            <td>Fatigue under repeated cycling</td>
-            <td>Bonding issues under high heat</td>
-        </tr>
-        <tr>
-            <td>Best use</td>
-            <td>Major structural morphing</td>
-            <td>Fine aerodynamic adjustments</td>
-        </tr>
-    </table>
+<!-- First table (Comparison of SMAs and MFCs) -->
+<table class="ex1" style="width:48%;">
+<tr style="background:#e6f0ff;">
+<th>Feature</th>
+<th>Shape Memory Alloys (SMAs)</th>
+<th>Macro Fiber Composites (MFCs)</th>
+</tr>
+<tr>
+<td>Deformation scale</td>
+<td>Large wing-shape changes</td>
+<td>Small, precise surface control</td>
+</tr>
+<tr>
+<td>Response speed</td>
+<td>Slow (temperature-based)</td>
+<td>Fast, high-frequency</td>
+</tr>
+<tr>
+<td>Durability</td>
+<td>Fatigue under repeated cycling</td>
+<td>Bonding issues under high heat</td>
+</tr>
+<tr>
+<td>Best use</td>
+<td>Major structural morphing</td>
+<td>Fine aerodynamic adjustments</td>
+</tr>
+</table>
 </div>
 
 
@@ -285,18 +299,23 @@ When these two innovations are integrated into a morphing wing structure, these 
 The combined advantages of drag reduction and improved lift drag ratios and the removal of the traditional hinged control surfaces offer a lighter, quieter and stealthier aircraft. 
 As research continues to refine these futuristic advancements SMA and MFC based Morphing Wings will redefine the standards for aircrafts – ushering in a new era of adaptive, high performance Aerospace Engineering
 </p>
+</div>
+
+
+<img src="MorphingWing.gif" alt="Banner" width="200" height="150">		
+
+</div>
+
+
+<!--Refrences section-->
 
 
 
-    <!--Refrences section-->
-
-
-    
-    <hr>
-    <div id="References_InText"> 
-    <h3 id="References"><b>References</b></h3>
-    <p class="ex1" id="ref1">
-    <pre>
+<hr>
+<div id="References_InText"> 
+<h3 id="References"><b>References</b></h3>
+<p class="ex1" id="ref1">
+<pre>
 <a href="https://technology.nasa.gov/Shape%20Memory%20Materials%20Open%20Doors%20for%20Smart%20Tech" target="_blank">[1]. NASA (2022). NASA’s Shape Memory Materials Open Doors for Smart Tech | T2 Portal. [Accessed 30 Oct. 2025].</a>
 <p id="ref2"> 
 <a href="https://www.nasa.gov/centers-and-facilities/glenn/nasa-sets-sights-on-mars-terrain-with-revolutionary-tire-tech/" target="_blank">[2]. Lilly, S. (2025). NASA Sets Sights on Mars Terrain with Revolutionary Tire Tech. [Accessed 30 Oct, 2025]</a>
@@ -312,97 +331,97 @@ As research continues to refine these futuristic advancements SMA and MFC based 
 <a href="https://insights.globalspec.com/article/7578/morphing-wing-created-using-smart-materials-and-actuators" target= "_blank">[7].Olson, E. (2018). Morphing Wing Created Using Smart Materials and Actuators.[Accessed 30 Oct, 2025]</a																																																				
 
 
-    </pre>
-    </p>
-    </div>
- 
-    <hr>
+</pre>
+</p>
+</div>
+
+<hr>
 
 <!-- //////////////////////////////////////////////////////////////////////////////// -->
-  <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
-  <!-- //////////////////////////////////////////////////////////////////////////////// -->
-    <!-- Last commit time display -->
+<!-- ////////////////////////////// Adding last update ////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////// -->
+<!-- Last commit time display -->
 <div id="last-updated">Loading last update time...</div>
 <!-- Verify Button -->
 <button onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
-    Verify Last Modified Time
+Verify Last Modified Time
 </button>
 <script>
-    async function getLastUpdatedTime() {
-        const username = 'FEPSFY6922043';
-        const repo = 'FY6922043';
-       
-        const url = `https://api.github.com/repos/${username}/${repo}/commits`;
-        try {
-            const response = await fetch(url, {
-                method: 'GET',
-                headers: {
-                    'Accept': 'application/vnd.github.v3+json',
-                }
-            });
-            if (!response.ok) {
-                throw new Error(`Error fetching data: ${response.status} - ${response.statusText}`);
-            }
-            const commits = await response.json();
-            if (commits && commits.length > 0) {
-                const lastCommitDate = new Date(commits[0].commit.committer.date);
-               
-                // Displaying the time on load
-                document.getElementById('last-updated').innerText = `Last Modified Time: ${lastCommitDate.toLocaleString()}`;
-            } else {
-                document.getElementById('last-updated').innerText = 'No commits found in the repository.';
-            }
-        } catch (error) {
-            console.error('Error fetching the last updated time:', error);
-            document.getElementById('last-updated').innerText = 'Error fetching update time. Please check the repository details.';
-        }
-    }
-    // Function to verify the last update time by re-fetching it from the API
-    async function verifyLastUpdatedTime() {
-        document.getElementById('last-updated').innerText = 'Verifying...';
-        await getLastUpdatedTime();
-        alert("Last modified time has been successfully verified from GitHub API.");
-    }
-    // Initial load to display the time on page load
-    window.onload = getLastUpdatedTime;
+async function getLastUpdatedTime() {
+const username = 'FEPSFY6922043';
+const repo = 'FY6922043';
+
+const url = `https://api.github.com/repos/${username}/${repo}/commits`;
+try {
+const response = await fetch(url, {
+method: 'GET',
+headers: {
+'Accept': 'application/vnd.github.v3+json',
+}
+});
+if (!response.ok) {
+throw new Error(`Error fetching data: ${response.status} - ${response.statusText}`);
+}
+const commits = await response.json();
+if (commits && commits.length > 0) {
+const lastCommitDate = new Date(commits[0].commit.committer.date);
+
+// Displaying the time on load
+document.getElementById('last-updated').innerText = `Last Modified Time: ${lastCommitDate.toLocaleString()}`;
+} else {
+document.getElementById('last-updated').innerText = 'No commits found in the repository.';
+}
+} catch (error) {
+console.error('Error fetching the last updated time:', error);
+document.getElementById('last-updated').innerText = 'Error fetching update time. Please check the repository details.';
+}
+}
+// Function to verify the last update time by re-fetching it from the API
+async function verifyLastUpdatedTime() {
+document.getElementById('last-updated').innerText = 'Verifying...';
+await getLastUpdatedTime();
+alert("Last modified time has been successfully verified from GitHub API.");
+}
+// Initial load to display the time on page load
+window.onload = getLastUpdatedTime;
 </script>
 
 
- <!-- //////////////////////////////////////////////////////////////////////////////// -->
-  <!-- ////////////////////////////// Word count function ////////////////////////////// -->
-  <!-- //////////////////////////////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////// -->
+<!-- ////////////////////////////// Word count function ////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////// -->
 <!-- Placeholder for total word count -->
 <p id="totalWordCount"></p>
 <hr>
 <script>
-  // Function to calculate and display word count for a specified section
-  function displayWordCount(sectionId) {
-    // Get the text content from the specified section
-    const element = document.getElementById(sectionId);
+// Function to calculate and display word count for a specified section
+function displayWordCount(sectionId) {
+// Get the text content from the specified section
+const element = document.getElementById(sectionId);
 if (!element) return 0; // Skip if not found
 const text = element.textContent || "";
-	// Split text into words based on spaces and filter out any empty strings
-    const wordArray = text.trim().split(/\s+/);
-    // Count the words
-    const wordCount = wordArray.length;
-    // Return the word count for summing purposes
-    return wordCount;
-  }
-  // Function to calculate and display total word count from selected sections
-  function displayTotalWordCount() {
-    // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
-    const ConclusionCount = displayWordCount("Conclusion_InText");
-    // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount + ConclusionCount;
-    // Display the total word count
-    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
-  }
-  // Run the function for specific sections and display total count when the page loads
-  window.onload = displayTotalWordCount;
+// Split text into words based on spaces and filter out any empty strings
+const wordArray = text.trim().split(/\s+/);
+// Count the words
+const wordCount = wordArray.length;
+// Return the word count for summing purposes
+return wordCount;
+}
+// Function to calculate and display total word count from selected sections
+function displayTotalWordCount() {
+// Calculate word count for each section and accumulate the total
+const IntroductionCount = displayWordCount("Introduction_InText");
+const AnalysisCount = displayWordCount("Analysis_InText");
+const ConclusionCount = displayWordCount("Conclusion_InText");
+// Calculate the sum of all selected sections
+const totalWordCount = IntroductionCount + AnalysisCount + ConclusionCount;
+// Display the total word count
+document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+}
+// Run the function for specific sections and display total count when the page loads
+window.onload = displayTotalWordCount;
 </script>
-    
-    
-    <hr>
-  </html>
+
+
+<hr>
+</html>
