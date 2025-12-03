@@ -243,18 +243,9 @@ Furthemore, MFCs are sensors able to detect damage to the aircraft components im
     margin-top: 20px;
 ">
 
-<h5 id="Comparison"><b>SMAs vs MFCs</b></h5>
-
-<div style="
-    display: flex; 
-    gap: 10px; 
-    align-items: stretch; 
-    margin-top: 20px;
-">
-
-    <!-- TABLE (unchanged, only width = 100% inside flex) -->
+    <!-- TABLE -->
     <div style="flex:1;">
-        <table class="ex1" style="width:100%;">
+        <table class="ex1" style="width:100%;">  
             <tr style="background:#e6f0ff;">
                 <th>Feature</th>
                 <th>Shape Memory Alloys (SMAs)</th>
@@ -287,14 +278,12 @@ Furthemore, MFCs are sensors able to detect damage to the aircraft components im
         </p>
     </div>
 
-    <!-- IMAGE (updated for NO ZOOM + NO CROP) -->
     <div style="flex:1; text-align:center;">
         <img src="SMA LD Ratio.png" 
              style="
                  width:100%; 
-                 height:100%; 
-                 object-fit:contain;   /* show full image, no zoom, no cropping */
-                 background:white;     /* avoid empty/transparent areas */
+                 height:100%;      /* matches table height */
+                 object-fit:cover; /* keeps proportions without distortion */
                  border:1px solid #aaa;
              ">
         <p style="text-align:center; font-style:italic; margin-top:5px;">
@@ -303,7 +292,6 @@ Furthemore, MFCs are sensors able to detect damage to the aircraft components im
     </div>
 
 </div>
-
 
 
 
