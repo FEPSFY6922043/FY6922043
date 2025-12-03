@@ -237,58 +237,64 @@ Furthemore, MFCs are sensors able to detect damage to the aircraft components im
 <h5 id="Comparison"><b>SMAs vs MFCs</b></h5>
 
 <div style="
-    display: flex;
-    gap: 30px; 
-    align-items: flex-start;
-    justify-content: center;
-    margin-top: 24px;
-    margin-bottom: 18px;
+display: flex;
+gap: 15px;
+align-items: flex-start;
+margin-top: 20px;
 ">
 
-    <!-- TABLE -->
-    <div style="flex:1; min-width:280px;">
-        <table class="ex1" style="width:100%; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.03); background:#fff; font-size:15px;">
-            <tr style="background:#e6f0ff;">
-                <th style="padding:10px;">Feature</th>
-                <th style="padding:10px;">SMAs</th>
-                <th style="padding:10px;">MFCs</th>
-            </tr>
-            <tr>
-                <td>Deformation scale</td>
-                <td>Large wing-shape changes</td>
-                <td>Small, precise surface control</td>
-            </tr>
-            <tr>
-                <td>Response speed</td>
-                <td>Slow (temperature-based)</td>
-                <td>Fast, high-frequency</td>
-            </tr>
-            <tr>
-                <td>Durability</td>
-                <td>Fatigue under repeated cycling</td>
-                <td>Bonding issues under high heat</td>
-            </tr>
-            <tr>
-                <td>Best use</td>
-                <td>Major structural morphing</td>
-                <td>Fine aerodynamic adjustments</td>
-            </tr>
-        </table>
-        <p style="text-align:left; font-style:italic; margin:10px 0 0 4px; color:#555;">
-            Table 1: SMAs vs MFCs
-        </p>
-    </div>
+<!-- TABLE (unchanged except width=50% of row) -->
+<div style="flex:1;">
+<table class="ex1" style="width:100%;">
+<tr style="background:#e6f0ff;">
+<th>Feature</th>
+<th>Shape Memory Alloys (SMAs)</th>
+<th>Macro Fiber Composites (MFCs)</th>
+</tr>
+<tr>
+<td>Deformation scale</td>
+<td>Large wing-shape changes</td>
+<td>Small, precise surface control</td>
+</tr>
+<tr>
+<td>Response speed</td>
+<td>Slow (temperature-based)</td>
+<td>Fast, high-frequency</td>
+</tr>
+<tr>
+<td>Durability</td>
+<td>Fatigue under repeated cycling</td>
+<td>Bonding issues under high heat</td>
+</tr>
+<tr>
+<td>Best use</td>
+<td>Major structural morphing</td>
+<td>Fine aerodynamic adjustments</td>
+</tr>
+</table>
 
-    <!-- IMAGE -->
-    <div style="flex:1; min-width:240px; display:flex; flex-direction:column; align-items:center;">
-        <img src="SMA LD Ratio.png"
-             style="width:90%; max-width:320px; border-radius:8px; border:1px solid #e3e3e3; box-shadow: 0 2px 10px rgba(0,0,0,0.04); margin-bottom:7px; background:white;">
-        <p style="font-style:italic; font-size:13px; color:#555; margin:0;">
-            <a href="#ref8"><i>Figure 3: SMA L/D Ratio Data.</i> [8]</a>
-        </p>
-    </div>
+<p style="text-align:left; font-style:italic; margin-top:5px;">
+Table 1: Comparison of SMAs and MFCs
+</p>
+</div>
+
+<!-- IMAGE (fixed: no distortion, no zoom, no stretching) -->
+<div style="flex:1; text-align:center;">
+<img src="SMA LD Ratio.png"
+style="
+width:100%;
+height:auto; /* key fix: natural proportion */
+max-height:300px; /* keeps it similar height to table */
+object-fit:contain; /* no cropping */
+border:1px solid #aaa;
+">
+<p style="text-align:center; font-style:italic; margin-top:5px;">
+<a href="#ref8"><i>Figure 3: SMA L/D Ratio Data.</i> [8]</a>
+</p>
+</div>
 
 </div>
+
 
 
 <!--Conclusion-->
