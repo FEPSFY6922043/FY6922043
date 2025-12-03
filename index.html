@@ -235,10 +235,17 @@ Furthemore, MFCs are sensors able to detect damage to the aircraft components im
 <!--SMAs vs MFCs-->
 
 <h5 id="Comparison"><b>SMAs vs MFCs</b></h5>
-<div style="display: flex; gap: 20px; align-items:flex-start; margin-top: 20px;">
 
-    <div>
-        <table class="ex1" style="width:20%;">
+<div style="
+    display: flex; 
+    gap: 10px; 
+    align-items: stretch;     /* Makes image + table same height */
+    margin-top: 20px;
+">
+
+    <!-- TABLE -->
+    <div style="flex:1;">
+        <table class="ex1" style="width:100%;">  
             <tr style="background:#e6f0ff;">
                 <th>Feature</th>
                 <th>Shape Memory Alloys (SMAs)</th>
@@ -266,22 +273,26 @@ Furthemore, MFCs are sensors able to detect damage to the aircraft components im
             </tr>
         </table>
 
-        <!-- Table caption -->
         <p style="text-align:left; font-style:italic; margin-top:5px;">
             Table 1: Comparison of SMAs and MFCs
         </p>
     </div>
 
-    <!-- Image next to table -->
-    <div style="text-align:center;">
-        <img src="SMA LD Ratio.png" alt="SMA L/D Data" 
-             style="height:100%; width:auto; max-height:400px; border:1px solid #aaa;">
+    <div style="flex:1; text-align:center;">
+        <img src="SMA LD Ratio.png" 
+             style="
+                 width:100%; 
+                 height:100%;      /* matches table height */
+                 object-fit:cover; /* keeps proportions without distortion */
+                 border:1px solid #aaa;
+             ">
         <p style="text-align:center; font-style:italic; margin-top:5px;">
-            <a href="#ref8"><i>Figure 3: SMA L/D Ratio Data.</i> [8]</a>                             
+            <a href="#ref8"><i>Figure 3: SMA L/D Ratio Data.</i> [8]</a>
         </p>
     </div>
 
 </div>
+
 
 
 
